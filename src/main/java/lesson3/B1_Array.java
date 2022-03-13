@@ -2,7 +2,7 @@ package lesson3;
 
 import java.util.Scanner;
 
-public class Array {
+public class B1_Array {
     public static void main(String[] args) {
         System.out.println("Find the maximum and minimum of an 1 dimensional array");
         int b;
