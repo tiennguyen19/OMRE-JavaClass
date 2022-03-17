@@ -1,4 +1,4 @@
-package hnc;
+package hcn;
 
 import java.util.Scanner;
 

@@ -1,6 +1,4 @@
-package hnc;
-
-import java.util.Scanner;
+package hcn;
 
 public class Main {
     public static void main(String[] args) {
