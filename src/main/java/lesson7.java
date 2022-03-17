@@ -1,3 +1,5 @@
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class lesson7 {
@@ -33,7 +35,10 @@ public class lesson7 {
         dien = input.nextInt();
         System.out.println("Nhập vào số khối nước dùng trong tháng: ");
         nuoc = input.nextInt();
-        System.out.printf("Số tiền Nam phải trả hàng tháng là: %.0fVND", Monthly_Fee(dien, nuoc));
+        Locale locale = new Locale("VI", "VN");
+        NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(locale);
+        System.out.println("Số tiền Nam phải trả hàng tháng là: " +currencyFormatter.format(Monthly_Fee(dien, nuoc)));
+//        System.out.printf("Số tiền Nam phải trả hàng tháng là: %.0fVND", Monthly_Fee(dien, nuoc));
     }
 
     public static int So_Chan_Lon_Nhat(int[] array){
