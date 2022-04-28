@@ -12,13 +12,12 @@ public class Main {
     }
 
     public static boolean checkPhoneNumber(String number){
-        String regexNumber3 = "^(086|096|032|039|038.|(^\\(\\+84\\)9))[0-9]*|\\.9{3}";
-        String regexNumber1 = "^(\\+84)((([0-9]*)|-|\\s)\\d{3}){3}";
+        String regexNumber1 = "^(086|096|032|039|038.|(^\\(\\+84\\)9))[0-9]*|\\.9{3}";
+        String regexNumber2 = "^(\\+84)((([0-9]*)|-|\\s)\\d{3}){3}";
         boolean result;
         boolean result1 = number.matches(regexNumber1);
-        //boolean result2 = number.matches(regexNumber2);
-        boolean result3 = number.matches(regexNumber3);
-        if (result1== false && result3 == false){
+        boolean result2 = number.matches(regexNumber2);
+        if (result1== false && result2 == false){
             System.out.println("Đây không phải số Viettel");
             result = false;
         }
